@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ptg_CouponUsage>
+            <version>1.0.0</version>
+        </Ptg_CouponUsage>
+    </modules>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Ptg_CouponUsage before="Mage_Adminhtml">Ptg_CouponUsage_Adminhtml</Ptg_CouponUsage>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <ptg_couponusage>
+                    <file>ptg/couponsusage.xml</file>
+                </ptg_couponusage>
+            </updates>
+        </layout>
+    </adminhtml>
+    <global>
+        <blocks>
+            <ptg_couponusage>
+                <class>Ptg_CouponUsage_Block</class>
+            </ptg_couponusage>
+        </blocks>
+        <helpers>
+            <ptg_couponusage>
+                <class>Ptg_CouponUsage_Helper</class>
+            </ptg_couponusage>
+        </helpers>
+    </global>
+</config>

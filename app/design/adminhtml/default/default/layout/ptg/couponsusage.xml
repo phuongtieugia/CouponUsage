@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_couponsusage_index>
+        <reference name="content">
+            <block type="ptg_couponusage/adminhtml_couponsusage" name="couponsusage" />
+        </reference>
+    </adminhtml_couponsusage_index>
+    <adminhtml_couponsusageview_index>
+        <reference name="content">
+            <block type="ptg_couponusage/adminhtml_couponsusageview" name="couponsusageview" />
+        </reference>
+    </adminhtml_couponsusageview_index>
+</layout>
